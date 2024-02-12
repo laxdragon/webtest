@@ -1,0 +1,7 @@
+Require all granted
+
+<FilesMatch "^(README\.md|\.git.*|data\.csv)$">
+  Require all denied
+</FilesMatch>
+
+

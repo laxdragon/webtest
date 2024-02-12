@@ -1,0 +1,7 @@
+FLAWS.md
+.htaccess
+**/.DS_Store
+**/.TemporaryItems
+**/.apdisk
+**/._*
+**/.fuse_*

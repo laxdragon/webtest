@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CodeWeavers Test</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/png" href="https://media.codeweavers.com/pub/crossover/website/images/cw_logo_128.png">
+  <script src="include.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="text-muted mb-0">
+        <img src="https://media.codeweavers.com/pub/crossover/website/images/cw_logo_128.png" alt="">
+        CodeWeavers IT
+    </h1>
+
+</div>
+
+<div id="erForm" class="container py-4">
+
+    <p><span class="text-info">Please enter in all the appropriate information.</p>
+
+    <form name="erForm" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+
+        <div class="input-group mb-1">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-fw fa-user"></i></span>
+            </div>
+            <input type="text" name="fname" class="form-control" placeholder="First Name" required>
+            <div class="invalid-tooltip">Required!</div>
+        </div>
+
+        <div class="input-group mb-1">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-fw fa-user"></i></span>
+            </div>
+            <input type="text" name="lname" class="form-control" placeholder="Last Name" required>
+            <div class="invalid-tooltip">Required!</div>
+        </div>
+
+        <div class="input-group mb-1">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-fw fa-envelope"></i></span>
+            </div>
+            <input type="text" name="email" class="form-control" placeholder="user@codeweavers.com" required>
+            <div class="invalid-tooltip">Required!</div>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-fw fa-calendar"></i></span>
+            </div>
+            <div class="input-group-prepend">
+                <span class="input-group-text">Date of Request</span>
+            </div>
+            <input type="date" name="date" class="form-control" required>
+            <div class="invalid-tooltip">Required!</div>
+        </div>
+
+        <div class="my-2">
+            <button type="submit" class="btn btn-primary"><i class="fa fa-arrow-right"></i> Submit Form</button>
+        </div>
+
+        <div id="erError" class="bg-warning rounded text-danger p-2 m-2 d-none w-50">
+            <i class="fas fa-exclamation-triangle"></i> Please check required fields!
+        </div>
+
+    </form>
+
+</div>
+
+<div id="erError" class="container d-none">
+    <div class="return-html bg-warning p-2 m-2"></div>
+</div>
+
+<div id="erDone" class="container d-none">
+
+    <h2 class="text-info">
+        You did it! Thanks for filling in this form!
+    </h2>
+
+    <p>Your <b class="text-warning">request</b> has been successfully submitted.</p>
+
+</div>
+
+</body>
+</html>
