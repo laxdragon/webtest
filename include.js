@@ -4,7 +4,7 @@
 
 $(document).ready(function()
 {
-    $('input[name=date]').val(new Date().toDateInputValue());
+    $('input[name=rdate]').val(new Date().toDateInputValue());
 
     $("form[name=erForm]").find(':input').focus(function(){
         $(this).removeClass('is-invalid');

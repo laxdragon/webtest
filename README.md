@@ -9,3 +9,8 @@ and display a successful page after completion.
 
 Create a git diff patch of your changes and email them back to us to
 complete the test.
+
+To create the sqlite3 database do the following
+```
+cat include/tables.sql | sqlite3 data/data.db
+```

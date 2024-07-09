@@ -1,5 +1,6 @@
 FLAWS.md
 .htaccess
+data/*
 **/.DS_Store
 **/.TemporaryItems
 **/.apdisk
